@@ -179,7 +179,26 @@ html, body {
 }
 
 .navbar-brand {
-    float: left;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    height: 100px;
+}
+
+#navBrandLogo {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100px;
+    height: 100px;
+}
+
+#navBrandText {
+    position: absolute;
+
+    top: 33%;
+    left: 35%;
 }
 
 
@@ -458,6 +477,32 @@ html, body {
     font-weight: bold;
     color: #02C39A;
 }
+
+.aboutMeUniWrapper {
+    position: relative;
+    height: 200px;
+
+}
+
+#aboutMeUniUW {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#aboutMeUniWLU {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /* typed */
 .typed-cursor {
