@@ -291,7 +291,7 @@ html, body {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 8%;
+    height: 50px;
 }
   
 .card:hover {
@@ -302,11 +302,11 @@ html, body {
     padding: 2px 16px;
 }
 
-.container p {
-    font-size: 1.5vw;
+#cardText {
+    font-size: 20px;
     font-weight: 600;
+    line-height: 40px;
 }
-
 
 
 
@@ -323,7 +323,7 @@ html, body {
 
 .titleText {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -486,8 +486,8 @@ html, body {
 
 #aboutMeUniUW {
     position: absolute;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -495,8 +495,8 @@ html, body {
 
 #aboutMeUniWLU {
     position: absolute;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -644,6 +644,10 @@ html, body {
     background-size: cover; /*crops the images so that they all sit nicely next to each other*/
     background-position: center;
     background-repeat: no-repeat;   /* because we put the style directly in the html file */
+
+    border: solid;
+    border-width: 5px;
+    border-color: #02C39A;
     border-radius: 10px;
 }
 
