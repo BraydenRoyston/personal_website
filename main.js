@@ -31,13 +31,11 @@ const portoflioImgs = document.querySelectorAll('.logoWrapper')
 portfolioItems.forEach(portfolioItem => {
     portfolioItem.addEventListener('mouseover', () => {
         portfolioItem.childNodes[1].classList.add('img-darken');
-        portfolioItem.childNodes[2].childNodes[1].classList.add('img-fade-in');
 
     })
 
     portfolioItem.addEventListener('mouseout', () => {
         portfolioItem.childNodes[1].classList.remove('img-darken');
-        portfolioItem.childNodes[2].childNodes[1].classList.remove('img-fade-in');
 
     })
 })
