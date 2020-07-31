@@ -35,6 +35,11 @@ html, body {
     overflow-x: hidden;
 }
 
+.megaWrapper {
+    position: relative;
+    height: 100000px;
+}
+
 /* loader */
 .no-js #loader { 
     display: none;  
