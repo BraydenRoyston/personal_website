@@ -43,4 +43,10 @@ portfolioItems.forEach(portfolioItem => {
 
 $(document).ready(function() {
     $('.navbar').localScroll({duration:800});
- });
+});
+
+const themeSwitch = document.querySelector('input');
+
+themeSwitch.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode');
+});

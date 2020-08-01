@@ -16,7 +16,7 @@
 
     </head>
 
-    <body>
+    <body class="light-mode">
       
       <div class="se-pre-con"></div>
 
@@ -39,17 +39,27 @@
             <!-- Nav Items -->
             <div class="collapse navbar-collapse" id="navbarToggler">
               <ul class="navbar-nav ml-auto mt-2 mt-md-0">
-
                 <li class="nav-item">
-                  <a class="nav-link" href="#headerSection">Home<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#headerSection"><p id="navLinkText">Home</p><span class="sr-only">(current)</span></a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutMeTitle">About</a>
+                    <a class="nav-link" href="#aboutMeTitle"><p id="navLinkText">About</p></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#showcaseTitle">Showcase</a>
+                    <a class="nav-link" href="#showcaseTitle"><p id="navLinkText">Showcase</p></a>
+                </li>
+
+                <li>
+                  <label class="switch">
+                    <i class="fa fa-sun-o"></i>
+                    <div>
+                      <input type="checkbox" />
+                      <span class="slider round"></span>
+                    </div>
+                    <i class="fa fa-moon-o"></i>
+                  </label>
                 </li>
               </ul>
             </div>
@@ -84,7 +94,7 @@
                     </div>
                   </div>
 
-                  <div class="row justify-content-center my-row" id="headerSocialsRow">
+                  <div class="row justify-content-center" id="headerSocialsRow">
                       <ul class="social-iconsHeader list-inline" id="headerSocials">
                         <li id="social"><a href="https://www.linkedin.com/in/braydenr" target="_blank"><i class = "fa fa-linkedin"></i></a></li>
                         <li id="social"><a href="https://github.com/BraydenRoyston" target="_blank"><i class = "fa fa-github"></i></a></li>
@@ -163,7 +173,7 @@
 
 
             <div class="row justify-content-center my-row" id="aboutMeSection">
-              <div class="col-lg-1 d-none d-lg-block row2" id="sideBanner">
+              <div class="col-lg-1 d-none d-lg-block row2 my-col" id="sideBanner">
                 <div class="square1"></div>
                 <div class="square2"></div>
                 <div class="square3"></div>
@@ -257,7 +267,7 @@
                     <div class="aboutMeUniWrapper">
 
                       <div class="aboutMeUni">
-                        <img src="img/uw.jpg.png" alt="" id="aboutMeUniUW">
+                        <!--<img src="img/uw.jpg.png" alt="" id="aboutMeUniUW">-->
                       </div>
 
                     </div>
@@ -267,7 +277,7 @@
                     <div class="aboutMeUniWrapper">
 
                       <div class="aboutMeUni">
-                        <img src="img/laurier2.jpg.png" alt="" id="aboutMeUniWLU">
+                        <!--<img src="img/laurier2.jpg.png" alt="" id="aboutMeUniWLU">-->
                       </div>
 
                     </div>
