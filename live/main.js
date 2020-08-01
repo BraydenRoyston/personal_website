@@ -1,3 +1,4 @@
+/*Compressed. For readability: https://github.com/BraydenRoyston/personal_website*/
 $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
@@ -21,6 +22,7 @@ var typed = new Typed('.type', {
         loop: true
 });
 const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+const portoflioImgs = document.querySelectorAll('.logoWrapper')
 portfolioItems.forEach(portfolioItem => {
     portfolioItem.addEventListener('mouseover', () => {
         portfolioItem.childNodes[1].classList.add('img-darken');
@@ -34,4 +36,8 @@ portfolioItems.forEach(portfolioItem => {
 })
 $(document).ready(function() {
     $('.navbar').localScroll({duration:800});
- });
+});
+const themeSwitch = document.querySelector('input');
+themeSwitch.addEventListener('change', () => {
+  document.body.classList.toggle('dark-mode');
+});
