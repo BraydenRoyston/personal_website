@@ -19,10 +19,14 @@
     --sideBannerUpEnd: var(--darkBlue);
     --sideBannerDownBegin: var(--darkBlue);
     --sideBannerDownEnd: var(--mint);
+    --navLogo: url("img/logo/white_clean.png");
+    --navText: white;
     --switchBackground: white;
     --switchSlider: var(--mint);
     --switchIcons: white; 
     --navBackground: var(--mint);
+    /*--headerLogo: ;*/
+    --headerPic: url("img/lakeBackSpreadNew2.png");
     --headerCard: white;
     --headerCardText: black;
     --headerSocials: white;
@@ -39,10 +43,14 @@
     --sideBannerUpEnd: var(--darkBlue);
     --sideBannerDownBegin: var(--darkBlue);
     --sideBannerDownEnd: var(--midBlue);
+    --navLogo: url("img/logo/black_clean.png");
+    --navText: black;
     --switchBackground: var(--offBlack);
     --switchSlider: var(--darkBlue);
     --switchIcons: var(--offBlack); 
     --navBackground: var(--darkBlue);
+    /*--headerLogo: url(img/logo/);*/
+    --headerPic: url("img/lakeBackSpreadNew2.png");
     --headerCard: var(--darkBlue);
     --headerCardText: var(--textGray);
     --headerSocials: var(--textGray);
@@ -132,6 +140,17 @@
     transition: background-color 0.6s ease, color 1s ease;
 }
 
+.navBrandLogo {
+    transition: background-color 0.6s ease, color 1s ease;
+}
+
+#navbrandText {
+    transition: background-color 0.6s ease, color 1s ease;
+}
+
+#navLinkText {
+    transition: background-color 0.6s ease, color 1s ease;
+}
 
 /* grid */
 .my-row {
@@ -322,7 +341,7 @@ html, body {
 }
 
 #navLinkText {
-    color: white;
+    color: var(--navText);
 }
 
 .navbar {
@@ -336,20 +355,25 @@ html, body {
     height: 100px;
 }
 
-#navBrandLogo {
+.navBrandLogo {
     position: absolute;
     left: 0;
     top: 0;
 
     width: 100px;
     height: 100px;
+
+    background: var(--navLogo);
+    background-size: cover; 
+    background-position: center;
 }
 
 #navBrandText {
     position: absolute;
-
     top: 33%;
     left: 35%;
+
+    color: var(--navText);
 }
 
 /* lm/dm switch */
@@ -414,7 +438,7 @@ input:checked + .slider {
     position: relative;
 
     height: 85vh;
-    background-image: url("img/lakeBackSpreadNew2.png");
+    background-image: var(--headerPic);
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
