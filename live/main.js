@@ -1,4 +1,3 @@
-/*Compressed. For readability: https://github.com/BraydenRoyston/personal_website*/
 $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
@@ -28,10 +27,8 @@ portfolioItems.forEach(portfolioItem => {
         portfolioItem.childNodes[1].classList.add('img-darken');
 
     })
-
     portfolioItem.addEventListener('mouseout', () => {
         portfolioItem.childNodes[1].classList.remove('img-darken');
-
     })
 })
 $(document).ready(function() {
