@@ -12,6 +12,8 @@
     --textGray: #e5e5e5;
 }
 
+
+
 /* dm/lm styles */
 .light-mode {
     --columnBackground: white;
@@ -151,6 +153,9 @@
 #navLinkText {
     transition: background-color 0.6s ease, color 1s ease;
 }
+body {
+    transition: background-color 0.6s ease, color 1s ease;
+}
 
 /* grid */
 .my-row {
@@ -180,10 +185,6 @@
     */
 }
 
-.body {
-    background: solid;
-    background: purple;
-}
 
 .my-container {
     padding: 0px;
@@ -196,7 +197,10 @@ html, body {
     overflow-x: hidden;
 }
 
-
+body {
+    background: solid;
+    background-color: var(--columnBackground);
+}
 
 /* loader */
 .no-js #loader { 
@@ -446,6 +450,11 @@ input:checked + .slider {
     border-radius: 60px;
 }
 
+@media screen and (max-width: 990px) {
+    .bannerContainer {
+        background-attachment: scroll;
+    }
+}
 
 .my-col-banner {
     padding-right: 0px;
