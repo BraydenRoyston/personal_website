@@ -388,7 +388,7 @@ body {
 
 /* lm/dm switch */
 .switch {
-    width: 100px;;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -433,6 +433,18 @@ input:checked + .slider {
     transform: translateX(28px);
 }
 
+@media screen and (max-width: 990px) {
+    .switch {
+        width: 150px;
+    }
+    .switch div {
+        width: 75px;
+        border-radius: 75px;
+    }
+    input:checked + .slider {
+        transform: translateX(53px);
+    }
+}
 
 /* ------------------------------------------------------------------*/
 /* -------------------------- HEADER  -------------------------------*/
